@@ -1,40 +1,71 @@
-import logo from './logo.svg'; // TO DO: add logo
-import { Routes, Route } from "react-router-dom";
-import { DynamicItem, Sidebar, dummyData } from "./components";
+import logo from './Images/logo.svg';
+import wind from './Images/wind.svg';
 import './App.css';
-
-
 
 function App() {
   return (
-    <div id="main">
+    <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="App-loadblock">
+          <img src={wind} className="App-load" alt="wind" />
+        </div>
+    {/* Deutsch */}
+        <div className="DEmain">
+          <a
+            className="App-link"
+            href="http://www.wikipedia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Deutsch
+          </a>
+        </div>
+    {/* English */}     
+        <div className="ENmain">
+          <a
+            className="App-link"
+            href="http://www.wikipedia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            English
+          </a>
+        </div>
+    {/* Português */}     
+        <div className="PTmain">
+          <a
+            className="App-link"
+            href="http://www.wikipedia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Português
+          </a>
+        </div>
+    {/* Japanese */}
+        <div className="JPmain">
+          <a
+            className="App-link"
+            href="http://www.wikipedia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Japanese
+          </a>
+        </div>
+    {/* Español */}
+        <div className="SPmain">
+          <a
+            className="App-link"
+            href="http://www.wikipedia.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Español
+          </a>
+        </div>
       </header>
-      <Sidebar>
-        <Routes>
-          <Route path="/" element={<DynamicItem page="homepage" />} />
-          {dummyData &&
-            dummyData.map((item, index) => (
-              <Route
-                key={index}
-                path={item.path}
-                element={<DynamicItem page={item.name} />}
-              />
-            ))}
-        </Routes>
-      </Sidebar>
     </div>
   );
 }
