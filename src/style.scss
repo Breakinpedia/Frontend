@@ -1,0 +1,53 @@
+.grid {
+    // Old spec
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    
+    // New spec
+    display: grid;
+    grid-template-columns: repeat( 8, 1fr );
+    grid-template-rows: auto;
+    
+    // by the power of Grayskull!
+    &__item::before {
+        content: '';
+        display: block;
+        padding-top: 100%;
+    }
+}
+
+
+// Pretty it up just a bit...
+$green: #779558;
+$cream: #eeedd3;
+$max-width: 570px;
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #212121;
+
+    .grid {
+        max-width: $max-width;
+        margin: 30px auto;
+        box-sizing: border-box;
+        border: 10px solid darken( $green, 30% );
+
+        &__item {
+            background-color: $cream;
+
+            // Well... I, uh...
+            &:nth-of-type(-2n+8), 
+            &:nth-of-type(8) ~ *:nth-of-type(-2n+15), 
+            &:nth-of-type(16) ~ *:nth-of-type(-2n+24), 
+            &:nth-of-type(24) ~ *:nth-of-type(-2n+31), 
+            &:nth-of-type(32) ~ *:nth-of-type(-2n+40), 
+            &:nth-of-type(40) ~ *:nth-of-type(-2n+47), 
+            &:nth-of-type(48) ~ *:nth-of-type(-2n+56), 
+            &:nth-of-type(56) ~ *:nth-of-type(-2n+63) {
+                background-color: $green;
+            }
+        }
+    }
+}
