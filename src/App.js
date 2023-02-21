@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './App.css';
 
 import Logo from './Components/Logo';
 import Lang from './Components/Lang';

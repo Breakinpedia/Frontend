@@ -14,71 +14,15 @@ export default function Logo(){
         }
     }
     return(
-        <div id="board" class="grid">
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
-            <div class="grid__item"></div>
+        <div id="lang-rectan" class="lang" >
+            <div id="jp-square" class="square"> </div>
+            <div id="pt-square" class="square"> </div>
+            <div id="de-square" class="square"> </div>
+            <div id="en-square" class="square"> </div>
+            <div id="sp-square" class="square"> </div>
+            <div id="it-square" class="square"> </div>
+            <div id="ko-square" class="square"> </div>
+            <div id="fr-square" class="square"> </div>
         </div>
     )
 }
