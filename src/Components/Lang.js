@@ -1,4 +1,5 @@
 import React from "react";
+import wind from '../Images/wind.svg';
 
 // de en es fr it nl pt ar fa hi ja ko ru zh
 export default function Logo(){
@@ -12,16 +13,20 @@ export default function Logo(){
             <div id="it-square" class="square1">Italiano</div>
             <div id="nl-square" class="square2">Nederlands</div>
             <div id="pt-square" class="square1">Português</div>
-            {/* MIDDLE: LOGO */}
-            <div id="ALL-square" class="square2"> LOGO </div>
+            {/* MIDDLE: LOADING */}
+            <div id="ALL-square" class="square2">
+                <div className="App-loadblock">
+                    <img src={wind} className="App-load" alt="wind" />
+                </div>
+            </div>
             {/* LANGS AFTER LOGO */}
-            <div id="ar-square" class="square1">Arabic</div>
-            <div id="fa-square" class="square2">Persian</div>
-            <div id="hi-square" class="square1">Hindi</div>
-            <div id="jp-square" class="square2">Japanese</div>
-            <div id="ko-square" class="square1">Korean</div>
-            <div id="ru-square" class="square2">Russian</div>
-            <div id="zh-square" class="square1">Chinese</div>
+            <div id="ar-square" class="square1">عربي</div>
+            <div id="fa-square" class="square2">فارسی</div>
+            <div id="hi-square" class="square1">हिंदी</div>
+            <div id="jp-square" class="square2">日本語</div>
+            <div id="ko-square" class="square1">한국어</div>
+            <div id="ru-square" class="square2">Русский</div>
+            <div id="zh-square" class="square1">中文</div>
         </div>
     )
 }
