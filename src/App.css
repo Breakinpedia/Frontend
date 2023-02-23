@@ -45,15 +45,70 @@
 }
 
 /*******************************! Lang.js ********************************/
-
-.square {
-  width: 50%;
+.lang {
+  display: grid;
+  grid-template-columns: repeat(3, 9fr);
+  gap: 1%;
+  text-align: center;
 }
 
-.square:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+@media screen and (max-width: 550px) {
+  .lang {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 551px) {
+  .lang {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1%;
+    text-align: center;
+  }
+}
+
+.square1 {
+  aspect-ratio: 1/ 1;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  background-color: #111;
+  color: #fff;
+  font-size: 4vw;
+}
+
+.square2 {
+  aspect-ratio: 1/ 1;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  background-color: #fff;
+  color: #111;
+  font-size: 4vw;
+}
+
+.square1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.square2 img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.square1.fullImg {
+  padding: 0;
+}
+
+.square2.fullImg {
+  padding: 0;
 }
 
 /*******************************! Logo.js ********************************/
